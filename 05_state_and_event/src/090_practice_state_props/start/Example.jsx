@@ -27,4 +27,5 @@ const CountUpdate = ({ setCount }) => {
   );
 };
 
+
 export default Example;
