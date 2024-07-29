@@ -19,8 +19,7 @@ const Input = forwardRef((props, ref) => {
 
 const Example = () => {
   const ref = useRef();
-
-
+  
   return (
     <>
       <Input ref={ref} />
