@@ -1,6 +1,6 @@
 import { useReducer, useState } from "react";
 
-const Example = () => {
+const Example = () => { 
   const [state, setState] = useState(0);
   const [rstate, dispatch] = useReducer((prev, {type, step}) => {
     switch (type) {
@@ -11,7 +11,6 @@ const Example = () => {
         default:
           throw new Error("不明なactionです")
     }
-
 
     // if(action === "+"){
     //   return ++prev;
