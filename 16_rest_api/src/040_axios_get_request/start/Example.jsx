@@ -1,5 +1,14 @@
-const Example = () => {
-  return <></>;
-};
+import { useEffect } from "react";
+import axios from "axios";
 
-export default Example;
+const Example = () => {
+  useEffect(() => {
+    const getUser = async () => {
+      const res = await axios.get(" http://127.0.0.1:3003/user")
+        console.log(res.data)
+      }
+      getUser();
+    })
+  };
+
+  export default Example;
