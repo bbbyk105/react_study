@@ -3,7 +3,7 @@ import { navList } from "../data/nav";
 
 export default function Home() {
   return (
-    <ul>
+    <ul className="nav-list">
       {navList.map((item) => {
         return (
           <li key={item}>
